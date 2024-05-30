@@ -121,7 +121,7 @@ print(sorted_words)  # Выведет: ['date', 'apple', 'banana', 'cherry']
 
 total = 0
 
-number = int(input('Enter a number: '))
+number = int(input('Enter a number: ')) 
 
 # Додаємо числа, доки number не дорівнюватиме 0
 while number != 0:
@@ -131,3 +131,4 @@ while number != 0:
     number = int(input('Enter a number: '))
 
 print('total =', total)
+
