@@ -48,4 +48,6 @@ print(txt2)
 # Partition - Return tuple with string parted in 3 parts. 
 # Middle part is specified string. If not found, entire string stored in first part of tuple.
 txt = "HTML is a programming language?"
+txt2 = txt.partition("programming")
 print(txt.partition("programming"))
+print(type(txt2))
