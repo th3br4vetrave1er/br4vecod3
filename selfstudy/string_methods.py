@@ -51,3 +51,10 @@ txt = "HTML is a programming language?"
 txt2 = txt.partition("programming")
 print(txt.partition("programming"))
 print(type(txt2))
+
+# Return string left justified. (needs to be len of string + len of characters in 2nd param)
+# 2nd optional param specifies character to fill space. Default is space
+txt = "JavaScript"
+txt2 = txt.rjust(15, "@") 
+print(txt2) 
+
