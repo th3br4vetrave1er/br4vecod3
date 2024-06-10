@@ -32,6 +32,7 @@ def start_message(message):
 
 @bot.message_handler(commands=['next'])
 def next_message(message):
+    print("Received /next command")  # Отладочное сообщение
     bot.send_message(message.chat.id, "Дальше только ты..")
   
 
