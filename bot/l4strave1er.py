@@ -28,7 +28,12 @@ bot = telebot.TeleBot(TOKEN)
 @bot.message_handler(commands=['start'])
 def start_message(message):
   bot.send_message(message.chat.id,"Никто тебя не любит. Все тебя ненавидят. Они проиграют. Улыбнись, уёбан.")
+  
+
 @bot.message_handler(commands=['next'])
-def start_message(message):
-  bot.send_message(message.chat.id,"Дальше только ты..")
+def next_messagee(message):
+  if message.text=="next":
+        bot.send_message(message.chat.id,"Дальше только ты..")
+  
+
 bot.infinity_poling()
