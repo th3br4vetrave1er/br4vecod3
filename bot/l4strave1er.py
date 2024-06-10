@@ -1,7 +1,8 @@
 import os
 from dotenv import load_dotenv
 import telebot
-
+import schedule
+import time
 # # Загружаем переменные из .env файла
 # load_dotenv()
 
@@ -27,13 +28,25 @@ bot = telebot.TeleBot(TOKEN)
 
 @bot.message_handler(commands=['start'])
 def start_message(message):
-  bot.send_message(message.chat.id,"Никто тебя не любит. Все тебя ненавидят. Они проиграют. Улыбнись, уёбан.")
+  bot.send_message(message.chat.id,"Ещё не время...")
   
-
-@bot.message_handler(commands=['next'])
-def next_message(message):
-    print("Received /next command")  # Отладочное сообщение
-    bot.send_message(message.chat.id, "Дальше только ты..")
   
+def send_daily_message():
+    chat_id = 'bravetrave1er'  # Замени на свой chat_id
+    bot.send_message(chat_id, "Никто тебя не любит. Все тебя ненавидят. Они проиграют. Улыбнись, уёбан.")
+    
+    
+schedule.every().day.at("12:12").do(send_daily_message)
 
-bot.infinity_poling()
+# Функция для запуска планировщика в отдельном потоке
+def run_scheduler():
+    while True:
+        schedule.run_pending()
+        time.sleep(1)
+
+# Запуск планировщика
+import threading
+scheduler_thread = threading.Thread(target=run_scheduler)
+scheduler_thread.start()
+
+bot.infinity_polling()
