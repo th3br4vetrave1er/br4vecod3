@@ -36,7 +36,7 @@ def send_daily_message():
     bot.send_message(chat_id, "Никто тебя не любит. Все тебя ненавидят. Они проиграют. Улыбнись, уёбан.")
     
     
-schedule.every().day.at("12:12").do(send_daily_message)
+schedule.every().day.at("21:17").do(send_daily_message)
 
 # Функция для запуска планировщика в отдельном потоке
 def run_scheduler():
