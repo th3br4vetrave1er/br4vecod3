@@ -31,9 +31,8 @@ def start_message(message):
   
 
 @bot.message_handler(commands=['next'])
-def next_messagee(message):
-  if message.text=="next":
-        bot.send_message(message.chat.id,"Дальше только ты..")
+def next_message(message):
+    bot.send_message(message.chat.id, "Дальше только ты..")
   
 
 bot.infinity_poling()
