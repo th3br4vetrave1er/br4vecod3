@@ -26,9 +26,10 @@ TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 
 bot = telebot.TeleBot(TOKEN)
 
-@bot.message_handler(commands=['start'])
 def start_message(message):
-  bot.send_message(message.chat.id,"Ещё не время...")
+    chat_id = message.chat.id
+    print(f"Chat ID: {chat_id}")
+    bot.send_message(chat_id, "Ещё не время...")
   
   
 def send_daily_message():
@@ -36,7 +37,7 @@ def send_daily_message():
     bot.send_message(chat_id, "Никто тебя не любит. Все тебя ненавидят. Они проиграют. Улыбнись, уёбан.")
     
     
-schedule.every().day.at("21:20").do(send_daily_message)
+schedule.every().day.at("21:24").do(send_daily_message)
 
 # Функция для запуска планировщика в отдельном потоке
 def run_scheduler():
