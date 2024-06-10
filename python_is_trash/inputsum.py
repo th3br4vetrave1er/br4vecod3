@@ -8,5 +8,4 @@ while x <= y:
     x += 1
 print(summa)
 
-TEST TEST
 
