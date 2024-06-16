@@ -1,3 +1,2 @@
-string = "    some     random text   "
-y = string.split()
-print(" ".join(y))
+z = "1 2 3 4 5 6"
+print(list(map(lambda x: int(x), z)))
