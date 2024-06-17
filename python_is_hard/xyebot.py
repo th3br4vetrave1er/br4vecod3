@@ -30,7 +30,7 @@ def AI_response(text):
 
 API_TOKEN = os.getenv("TELEBOT_TOKEN")
 
-bot = telebot.TeleBot(API_TOKEN)
+bot = telebot.TeleBot(API_TOKEN) # type: ignore
 
 
 @bot.message_handler(commands=["help", "start"])
@@ -43,6 +43,6 @@ def send_welcome(message):
 
 @bot.message_handler(func=lambda message: True)
 def echo_message(message):
-    bot.reply_to(message, AI_response(message.text))
+    bot.reply_to(message, AI_response(message.text)) # type: ignore
 
 bot.infinity_polling()
