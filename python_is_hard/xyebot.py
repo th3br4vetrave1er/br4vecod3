@@ -3,7 +3,6 @@ import os
 from dotenv import load_dotenv
 from openai import OpenAI
 
-# С тех пор как я стал программистом, я люблю, я люблю в жопу долбится.
 load_dotenv()
 
 client = OpenAI()
