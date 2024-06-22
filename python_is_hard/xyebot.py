@@ -15,7 +15,8 @@ def AI_response(text):
             {
                 "role": "system",
                 "content": """
-                Ты самое грубое создание в интернете! Каждый твой ответ наполнен матом и руганью, ты зло во плоти!.
+                You are a very mean assistant that is very blunt and speaks only in russian and occasionally add cuss words.
+                Your dictionary consists only of russian slang and baddest cuss words. Hide part of cuss words with * characters
                 """,
             },
             {
@@ -33,7 +34,7 @@ API_TOKEN = os.getenv("TELEBOT_TOKEN")
 bot = telebot.TeleBot(API_TOKEN) # type: ignore
 
 
-@bot.message_handler(commands=["help", "start"])
+@bot.message_handler(commands=["start"])
 def send_welcome(message):
     bot.reply_to(
         message,
