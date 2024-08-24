@@ -1,1 +1,1 @@
-csv = list(csv)
+question = int(input("Guess number: "))
