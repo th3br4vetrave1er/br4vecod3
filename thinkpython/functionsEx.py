@@ -6,35 +6,35 @@
 # Hint: Use the len function, the string concatenation operator (+) 
 # and the string repetition operator (*).
 
-def print_right(text):
-    length = len(text)
-    final = " " * (40 - length) + text
-    print(final)
-    print(len(final))
+# def print_right(text):
+#     length = len(text)
+#     final = " " * (40 - length) + text
+#     print(final)
+#     print(len(final))
     
-print_right("traveler")
+# print_right("traveler")
 
 # 3.11.3. Exercise
 # Write a function called triangle that takes a string and an integer and draws a pyramid 
 # with the given height, made up using copies of the string. 
 
-def triangle(text, digit):
-    for i in range(digit + 1): # +1 cause last value of range doesn't count
-        print(text * i)
+# def triangle(text, digit):
+#     for i in range(digit + 1): # +1 cause last value of range doesn't count
+#         print(text * i)
    
         
-triangle("D", 6)
+# triangle("D", 6)
 
 # 3.11.4. Exercise
 # Write a function called rectangle that takes a string and two integers 
 # and draws a rectangle with the given width and height, 
 # made up using copies of the string. 
 
-def rectangle(text, num1, num2):
-    for i in range(num2 +1):
-        print(text * num1)
+# def rectangle(text, num1, num2):
+#     for i in range(num2 +1):
+#         print(text * num1)
         
-rectangle("A", 10, 6)
+# rectangle("A", 10, 6)
 
 # 3.11.5. Exercise
 # Write a function called bottle_verse that takes a number as a parameter 
@@ -43,11 +43,28 @@ rectangle("A", 10, 6)
 # Hint: Consider starting with a function that can print the first, second, 
 # or last line of the verse, and then use it to write bottle_verse.
 
-def bottle_verse(num):
-    for i in range(num + 1):
-        print(f"{num} bottles of beer on the wall")
-        print(f"{num} bottles of beer")
-        print("Take one down, pass it around")
-        print(f"{num - 1} bottles of beer on the wall")
-        
-bottle_verse(6)
+# def bottle_verse(num):
+#     for i in range(num):
+#         print(f"{num} bottles of beer on the wall.")
+#         print(f"{num} bottles of beer.")
+#         print("Take one down, pass it around.")
+#         print(f"{num - 1} bottles of beer on the wall.")
+#         num -= 1
+# bottle_verse(99)
+
+                            #   JEAN CLAUDE EXERCISES
+# def greeting(name):
+#     print(f"Hello, {name}! How was your day? We missed you!")
+    
+# greeting("Dan")
+
+# def summ(num1, num2):
+#     print(f"{num1} + {num2} equals {num1 + num2}!")
+    
+# summ(923803824, 28378437874)
+
+# def radius(radius_num):
+#     print(3.14 * radius_num ** 2)
+    
+# radius(24)
+
