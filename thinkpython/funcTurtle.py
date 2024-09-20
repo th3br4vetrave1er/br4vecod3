@@ -88,3 +88,12 @@ import turtle
 # turtle.done()
 
 # TODO Добить упражнения с черепашкой, разобраться в ней
+
+def parallelogram(side1, side2):
+    for i in range(4):
+        turtle.forward(side1)
+        turtle.setheading(60)        
+        turtle.left(side2)
+        turtle.setheading(90)  
+        
+parallelogram(100, 25)
