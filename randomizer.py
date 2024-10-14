@@ -28,7 +28,7 @@ from random import randint
 
 
 from random import randint
-names = ["Biblos", "Dan", "Lusha", "Slavix", "Sharik", "Maxik", "Velarion"]
+names = ["Biblos", "Dan", "Lusha", "Sharik", "Slavix", "Velarion"]
 list_length = len(names)
 randomizer = randint(0, list_length - 1)
 
