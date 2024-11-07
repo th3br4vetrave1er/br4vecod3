@@ -1,4 +1,5 @@
 {
     "python.analysis.typeCheckingMode": "basic",
     "editor.fontFamily": "JetBrains Mono",
+    "window.titleBarStyle": "custom",
 }

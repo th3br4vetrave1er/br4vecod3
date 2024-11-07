@@ -51,14 +51,14 @@
 #   else:
 #       print(i)
     
-from pandas import DataFrame
+# from pandas import DataFrame
 
-dictionary = {
-    "name": ["John", "Vishvajit", "Harsh", "Harshita"],
-    "age": [20, 25, 31, 25],
-    "gender": ["Male", "Male", "Male", "Female"]
-}
+# dictionary = {
+#     "name": ["John", "Vishvajit", "Harsh", "Harshita"],
+#     "age": [20, 25, 31, 25],
+#     "gender": ["Male", "Male", "Male", "Female"]
+# }
 
-df = DataFrame(data=dictionary, columns=["name", "age"])
-print(df)
-    
+# df = DataFrame(data=dictionary, columns=["name", "age"])
+# print(df)
+
