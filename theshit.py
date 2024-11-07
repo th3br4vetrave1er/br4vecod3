@@ -10,7 +10,7 @@
 #     elif guess > win_num:
 #         print("Too much, mate!")
 #     guess = int(input("GUESS AGAIN: "))
-    
+
 # if guess == win_num:
 #     print(f"YOU GUESSED IT! {guess} IS THE WIN NUM!!!")
 
@@ -24,7 +24,7 @@
 #     names_dict[name_list[0]] = name_list[1]
 #     print(name_list)
 #     print(names_dict)
-    
+
 # print(names_dict)
 # names_dict["John"] = "Connor"
 # print(names_dict)
@@ -47,10 +47,10 @@
 #   elif i % 3 == 0:
 #     print("FIZZ")
 #   elif i % 5 == 0:
-#       print("BUZZ") 
+#       print("BUZZ")
 #   else:
 #       print(i)
-    
+
 # from pandas import DataFrame
 
 # dictionary = {
@@ -62,3 +62,6 @@
 # df = DataFrame(data=dictionary, columns=["name", "age"])
 # print(df)
 
+text = "Test text here, nothing special"
+
+print(text.replace("nothing", "very"))
