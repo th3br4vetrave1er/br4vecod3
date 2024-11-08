@@ -1,0 +1,275 @@
+# Create a Mage class with 'name', 'mana', and 'spells' properties
+# Add a 'cast' method that takes another mage as target
+# If spells > 0, reduce spells by 1 and call target's 'take_damage' method
+# If spells = 0, raise Exception with "{name} is out of spells!"
+# Add a 'take_damage' method that raises Exception if mage dies (mana reaches 0)
+
+class Mage:
+    def __init__(self, name, mana, spells):
+        pass
+
+    def cast(self, target):
+        pass
+
+    def take_damage(self):
+        pass
+
+
+___________________
+
+# Music Store
+
+Create a program to manage a digital music store's inventory using
+the `Song` and `MusicStore` classes.
+
+### Song class
+
+#### `__init__(self, title, artist)`
+Set `.title` and `.artist` to the values of the parameters.
+
+### MusicStore class
+
+Add the following methods:
+
+#### `__init__(self, store_name)`
+* Initialize a `.name` member variable with the `store_name` parameter
+* Create a `.songs` member initialized as an empty list
+
+#### `add_song(self, song)`
+Add the `song` (a `Song` instance) to the `.songs` list
+
+#### `remove_song(self, song)`
+Remove the song if both title and artist match an existing song in the store
+
+#### `find_songs_by_artist(self, artist_name)`
+Return a list of all songs where the `artist_name` matches
+the song's artist (case insensitive)
+
+Remember to:
+
+Create both classes
+Initialize the proper variables
+Implement each method one at a time
+Test your code as you go
+
+
+
+# Pet Shelter
+
+You need to create a system for an animal shelter to track their pets using the `Pet` and `Shelter` classes.
+
+### Pet class
+
+#### `__init__(self, name, species, age)`
+Set `.name`, `.species`, and `.age` to the values of the parameters.
+
+### Shelter class
+
+Add the following methods:
+
+#### `__init__(self, shelter_name)`
+* Initialize a `.name` member variable with the `shelter_name` parameter
+* Create a `.pets` member initialized as an empty list
+* Create a `.total_pets` member initialized to 0
+
+#### `admit_pet(self, pet)`
+* Add the `pet` (a `Pet` instance) to the `.pets` list
+* Increment `.total_pets` by 1
+
+#### `adopt_pet(self, pet)`
+* If a pet with matching name and species is found in `.pets`, remove it
+* Decrement `.total_pets` by 1 if a pet was removed
+
+#### `get_pets_by_species(self, species)`
+* Return a list of all pets of the specified species (case insensitive)
+* The returned list should maintain the order in which the pets were admitted
+
+## Hints
+* Remember to use `.lower()` for case-insensitive comparisons
+* The `.total_pets` count should never go below 0
+
+his exercise builds on the Library concept but adds:
+
+A third attribute in the Pet class
+A counter for total pets
+More specific search criteria
+
+
+
+# Movie Theater
+
+Create a program to manage movie screenings at a theater using the `Movie`
+and `Theater` classes.
+
+### Movie class
+
+#### `__init__(self, title, director, duration, rating)`
+Set `.title`, `.director`, `.duration` (in minutes), and `.rating` to
+the values of the parameters.
+
+### Theater class
+
+Add the following methods:
+
+#### `__init__(self, theater_name)`
+* Initialize a `.name` member variable with the `theater_name` parameter
+* Create a `.movies` member initialized as an empty list
+* Create a `.currently_playing` member initialized as an empty list (max 3 movies)
+
+#### `add_movie(self, movie)`
+* Add the `movie` (a `Movie` instance) to the `.movies` list (full inventory)
+
+#### `schedule_movie(self, movie)`
+* If the movie exists in `.movies` and `.currently_playing` has less than 3 movies:
+    * Add the movie to `.currently_playing`
+    * Return True
+* Otherwise return False
+
+#### `remove_movie(self, movie)`
+* Remove the movie from both `.movies` and `.currently_playing` if found
+* The movie should match both title and director
+
+#### `get_movies_by_rating(self, rating)`
+* Return a list of all movies with the specified rating (case insensitive)
+* Only return movies from the full inventory (`.movies`), not
+just currently playing ones
+
+## Hints
+* The `.currently_playing` list should never have more than 3 movies
+* Use `.lower()` for case-insensitive comparisons
+* Make sure to check if a movie exists before scheduling it
+
+This exercise is more complex than the previous ones because it:
+
+Has more attributes in the Movie class
+Maintains two different lists (inventory and currently playing)
+Has a limit on currently playing movies
+Includes a method that returns a boolean
+
+
+
+1. Склад товаров
+Создай программу для управления складом товаров с использованием
+классов Product и Warehouse.
+
+Класс Product
+__init__(self, name, category, quantity)
+Устанавливает .name, .category, и .quantity в соответствии с параметрами.
+Класс Warehouse
+Добавь следующие методы:
+
+__init__(self, warehouse_name)
+Инициализирует .name с параметром warehouse_name
+Создаёт пустой список .products
+Инициализирует счётчик .total_products как 0
+
+add_product(self, product)
+Добавляет product (экземпляр Product) в список .products
+Увеличивает .total_products на 1
+
+remove_product(self, product)
+Если продукт с совпадающим названием и категорией найден в .products, удаляет его
+Уменьшает .total_products на 1 (если продукт был удалён)
+get_products_by_category(self, category)
+Возвращает список всех продуктов указанной категории (не учитывая регистр)
+Список должен сохранять порядок добавления продуктов
+
+
+
+2. Система учебных курсов
+Создай программу для управления учебными курсами с использованием
+классов Course и CourseManager.
+
+Класс Course
+__init__(self, title, instructor, duration)
+Устанавливает .title, .instructor и .duration в соответствии с параметрами
+Класс CourseManager
+Добавь следующие методы:
+
+__init__(self)
+Создаёт пустой список .courses
+add_course(self, course)
+Добавляет course (экземпляр Course) в список .courses
+remove_course(self, course)
+Если курс с совпадающим названием и именем инструктора найден в .courses,
+удаляет его
+
+find_courses_by_instructor(self, instructor)
+Возвращает список всех курсов, ведущихся указанным
+инструктором (не учитывая регистр)
+
+
+
+3. Магазин книг
+Создай программу для управления книжным магазином с использованием
+классов Book и BookStore.
+
+Класс Book
+__init__(self, title, author, genre)
+Устанавливает .title, .author, и .genre в соответствии с параметрами
+Класс BookStore
+Добавь следующие методы:
+
+__init__(self, store_name)
+Инициализирует .name с параметром store_name
+Создаёт пустой список .books
+
+add_book(self, book)
+Добавляет book (экземпляр Book) в список .books
+
+remove_book(self, book)
+Если книга с совпадающими названием и автором найдена в .books, удаляет её
+
+get_books_by_genre(self, genre)
+Возвращает список всех книг указанного жанра (не учитывая регистр)
+
+
+
+4. Спортивная команда
+Создай программу для управления списком игроков спортивной команды с
+использованием классов Player и Team.
+
+Класс Player
+__init__(self, name, position, number)
+Устанавливает .name, .position и .number в соответствии с параметрами
+Класс Team
+Добавь следующие методы:
+
+__init__(self, team_name)
+Инициализирует .name с параметром team_name
+Создаёт пустой список .players
+
+add_player(self, player)
+Добавляет player (экземпляр Player) в список .players
+
+remove_player(self, player)
+Если игрок с совпадающими именем и номером найден в .players, удаляет его
+
+get_players_by_position(self, position)
+Возвращает список всех игроков на указанной позиции (не учитывая регистр)
+
+
+
+5. Библиотека фильмов
+Создай программу для управления коллекцией фильмов с использованием
+классов Movie и MovieLibrary.
+
+Класс Movie
+__init__(self, title, director, genre, release_year)
+Устанавливает .title, .director, .genre, и .release_year в соответствии с
+параметрами
+Класс MovieLibrary
+Добавь следующие методы:
+
+__init__(self, library_name)
+Инициализирует .name с параметром library_name
+Создаёт пустой список .movies
+
+add_movie(self, movie)
+Добавляет movie (экземпляр Movie) в список .movies
+
+remove_movie(self, movie)
+Если фильм с совпадающими названием и режиссёром найден в .movies, удаляет его
+
+get_movies_by_genre(self, genre)
+Возвращает список всех фильмов указанного жанра (не учитывая регистр)

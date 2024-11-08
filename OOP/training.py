@@ -61,3 +61,16 @@
 #       raise Exception(f"{self.name} is dead")
 
 
+class Song:
+  def __init__(self, title, artist):
+    self.title = title
+    self.artist = artist
+
+
+class MusicStore:
+  def __init__(self, store_name):
+    self.name = store_name
+    self.songs = []
+
+
+  def add_song(self, song):
