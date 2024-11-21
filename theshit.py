@@ -62,6 +62,13 @@
 # df = DataFrame(data=dictionary, columns=["name", "age"])
 # print(df)
 
-text = "Test text here, nothing special"
+# text = "Test text here, nothing special"
 
-print(text.replace("nothing", "very"))
+# print(text.replace("nothing", "very"))
+
+
+name = input("What is your name? ")
+color = input("What is you favorite color? ")
+
+print(f"{name} likes {color}")
+
