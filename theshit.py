@@ -67,8 +67,48 @@
 # print(text.replace("nothing", "very"))
 
 
-name = input("What is your name? ")
-color = input("What is you favorite color? ")
+# name = input("What is your name? ")
+# color = input("What is you favorite color? ")
 
-print(f"{name} likes {color}")
+# print(f"{name} likes {color}")
 
+# import requests
+# resp = requests.get("http://olympus.realpython.org")
+# html = resp.text
+# print(html[86:132])
+
+
+# string1 = "Becomes"
+# string2 = "becomes"
+# string3 = "BEAR"
+# string4 = " bEautiful"
+
+
+# string1 = string1.lower()
+# print(string1.startswith("be"))
+# print(string2.startswith("be"))
+# string3 = string3.lower()
+# print(string3.startswith("be"))
+# string4 = string4.lstrip().lower()
+# print(string4.startswith("be"))
+
+# takes = input("gimme input: ")
+# takes_lower = takes.lower()
+# takes_len = len(takes)
+# print(takes_lower, takes_len)
+
+# answer = input("tell me ur psswrrd: ")
+# first_letter = answer[0].upper()
+# print(first_letter)
+
+# a = input("enter a ")
+# b = input("enter b ")
+
+# result = float(int(a) * int(b))
+
+# print(result)
+
+# 1
+name = input("Ваше имя: ")
+age = input("Ваш возраст: ")
+print("Привет, меня зовут "+ name + ", " + "и мне " + age + " лет!" )
