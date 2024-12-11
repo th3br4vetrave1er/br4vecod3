@@ -108,7 +108,77 @@
 
 # print(result)
 
-# 1
-name = input("Ваше имя: ")
-age = input("Ваш возраст: ")
-print("Привет, меня зовут "+ name + ", " + "и мне " + age + " лет!" )
+# # 1
+# name = input("Ваше имя: ")
+# age = input("Ваш возраст: ")
+# print("Привет, меня зовут "+ name + ", " + "и мне " + age + " лет!" )
+
+
+# #2
+
+# num = 5
+
+# print(num / 2)
+# print(num // 2)
+
+# #3
+
+# name = input("Ваше имя: ")
+# print(name * 3)
+
+# text = "python is fun"
+
+# print(text.upper())
+# print(text.lower())
+# print(text.title())
+
+
+# #4
+
+# user_input = input("enter your input: ")
+
+# print("Длина строки: ", len(user_input))
+
+# #1
+# num = int(input("Enter your num: "))
+# if num % 2 == 0:
+#   print("Your num is odd")
+# else:
+#   print("Num is equal")
+
+
+# import random
+
+# random_integer = random.randint(1, 10)
+
+# print(random_integer)
+
+
+# import my_module
+# print(my_module.my_favorite_colour)
+
+# import random
+
+# random_num = random.random() * 10
+# print(random_num)
+
+# random_float = random.uniform(1, 10)
+
+# print(random_float)
+
+
+# heads = 1
+# tails = 2
+# the_roll = random.randint(heads, tails)
+
+# if the_roll == 1:
+#   print("heads")
+# else:
+#   print("tails")
+
+
+import random
+
+friends = ["Alice", "Bob", "Charlie", "David", "Emanuel"]
+
+print(f"{random.choice(friends)} is payin the bill")
