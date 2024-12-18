@@ -31,8 +31,6 @@
 # del names_dict["John"]
 # print(names_dict)
 
-
-
 # try:
 #   10 / 0
 # except Exception as e:
@@ -177,8 +175,97 @@
 #   print("tails")
 
 
-import random
+# import random
 
-friends = ["Alice", "Bob", "Charlie", "David", "Emanuel"]
+# friends = ["Alice", "Bob", "Charlie", "David", "Emanuel"]
 
-print(f"{random.choice(friends)} is payin the bill")
+# print(f"{friends[random.randint(0, len(friends)
+# - 1)]} is payin the bill") # or random.choice(friends)
+
+# day_1 = 1.434
+
+# day_2 = 2.12
+
+# day_3 = 1.632
+
+# day_4 = 5.59
+
+# day_5 = 2.542
+
+# day_6 = 1.1
+
+# day_7 = 1.324
+
+# week_dist = 1000 * (day_1 + day_2 + day_3 + day_4 + day_5 + day_6 + day_7)
+
+# week_dist /= 1000
+
+# print(week_dist)
+
+
+# from decimal import Decimal
+
+# i = Decimal("3.3") + Decimal("4.1")
+
+# print(i)
+
+
+# response = 424562
+
+
+# sec_in_days = 60 * 60 * 24
+
+# sec_in_hours = 60 * 60
+
+# sec_in_minutes = 60
+
+# days = response // sec_in_days
+
+# response = response % sec_in_days
+
+# hours = response // sec_in_hours
+
+# response = response % sec_in_hours
+
+# minutes = response // sec_in_minutes
+
+# seconds = response % sec_in_minutes
+
+# print(days, hours, minutes, seconds)
+
+
+# weight = 75  # Вес
+# height = 175 # Рост
+# dist = 9.75  # Расстояние в км
+# hours = 2 # Время движения в часах
+
+# # spent_calories = weight * 0.035 +
+# (dist ** 2 / height + weight * 0.029) * hours
+# spent_calories = (0.035 * weight +
+# (0.029 * weight) * (((dist/hours) ** 2) / height)) * hours * 60
+# print(spent_calories)
+
+
+# def speak_up(sentence):
+#     sentence.pop()
+#     sentence.append('!')
+#     return sentence
+
+
+# words = ['Программировать', 'круто', '.']
+
+# more_words = {'Пиши', 'код', '.'}
+# print(speak_up(words))
+# print(speak_up(more_words))
+
+
+# name: str = "Natasha"
+# var_for_bool: bool = True
+
+# print(__annotations__)
+
+def is_rhomb(size_a: float, size_b: float) -> bool:
+    return size_a == size_b
+
+
+print(is_rhomb(14.2, 14.2))
