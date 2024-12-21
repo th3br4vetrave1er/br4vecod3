@@ -264,8 +264,34 @@
 
 # print(__annotations__)
 
-def is_rhomb(size_a: float, size_b: float) -> bool:
-    return size_a == size_b
+# def is_rhomb(size_a: float, size_b: float) -> bool:
+#     return size_a == size_b
 
 
-print(is_rhomb(14.2, 14.2))
+# print(is_rhomb(14.2, 14.2))
+
+
+# def avg(first_num, second_num):
+#     return (first_num + second_num) / 2
+
+
+# print(avg(5, 10))
+
+# nums = [1, 2, 3, '4', 5]
+# sum = 0
+# for num in nums:
+#     sum += num
+#     print(sum)
+
+x: int = int(input("Enter X: "))
+y: int = int(input("Enter Y: "))
+
+
+if x >= 0 and y >= 0:
+    print("1 chapter")
+elif x < 0 and y >= 0:
+    print("2 chapter")
+elif x < 0 and y < 0:
+    print("3 chapter")
+elif x >= 0 and y < 0:
+    print("4 chapter")
